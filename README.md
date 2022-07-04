@@ -30,7 +30,12 @@ sudo make install
 sudo make configs
 ```
 
-2. **Install an Apache2 server in your Raspberry Pi**
+  -edit the file janus.plugin.streaming.jcfg with the contents available in the folder Janus in this repository
+  ```
+  sudo nano opt/janus/etc/janus/janus.plugin.streaming.jcfg
+  ```
+
+2. **Install an Apache2 server in your Raspberry Pi and copy the janus html files**
 ```
 sudo apt install apache2 -y
 sudo cp -r /home/pi/janus/janus-gateway/html /var/www/janus
@@ -85,5 +90,13 @@ sudo a2enmod wsgi
 sudo a2enmod headers
 sudo a2enmod rewrite
 sudo service apache2 restart
+```
+
+7. Start Janus WebRTC server. Send a video stream using the tool ffmpeg
+
+```
+/opt/janus/bin/janus -F /opt/janus/etc/janus/
+sudo raspivid -t 0 -w 680 -h 480 -fps 20 -g 75 -b 200000 -n -rot 90 -o - | ffmpeg  -i - -c:v copy -r 20 -bsf dump_extra -maxrate 100K -bufsize 80K -tune zerolatency -f rtp rtp://127.0.0.1:5004?pkt_size=1300
+
 ```
 
