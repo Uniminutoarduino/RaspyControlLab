@@ -31,8 +31,12 @@ sudo make configs
 sudo apt install apache2 -y
 sudo cp -r /home/pi/janus/janus-gateway/html /var/www/janus
 ```
--(Edit sites available) sudo nano /etc/apache2/sites-available/000-default.conf
+  -Edit the file 000-default.conf with the content of the file 000-default.conf in the folder (Apache2) of this respository
 
+```
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+  -Enable proxy mode in the Apache2 service
 ```
 sudo a2enmod proxy
 sudo a2enmod proxy_http
