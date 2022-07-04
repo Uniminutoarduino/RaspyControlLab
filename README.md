@@ -1,7 +1,7 @@
 # RaspyControlLab
 Main software repository for the Open-Hardware project (RaspyControl Lab). This laboratory is an initiative to build open-hardware experiments in automatic control available for all. Follow the instructions to build the software of RaspyControlLab.
 
-![IMG_20220610_205943304](https://user-images.githubusercontent.com/11606241/177064720-b8cd46d5-4f96-48dc-b30c-bbd673d8253f.jpg)
+![IMG_20220610_205943304](https://user-images.githubusercontent.com/11606241/177064756-751f21b6-fdd3-4ecb-aab0-6fc227649cfa.jpg)
 
 # Prerequisites
 1. Download a 32-bit Raspberry Pi Os with recommended software from the webpage: https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2022-04-07/2022-04-04-raspios-bullseye-armhf-full.img.xz
