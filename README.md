@@ -68,4 +68,13 @@ www-data ALL= NOPASSWD: ALL
   sudo service apache2 restart
 ```
 
+4. **Copy the RaspycontrolLab Apache 2 configuration file called "FlaskApp.conf" in the location /etc/apache2/sites-available**
+```
+sudo cp FlaskApp.conf /etc/apache2/sites-available
+```
+
+5. **Copy all contents of the folder FlaskApp inside the location /var/wwww
+```
+sudo cp -R FlaskApp /var/www
+```
 
