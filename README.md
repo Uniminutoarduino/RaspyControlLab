@@ -9,7 +9,8 @@ Main software repository for the Open-Hardware project (RaspyControl Lab). Follo
 
 # Software Installation Instructions
 1. Install Janus WebRTC server. This server allows the real-time video for the laboratory.
-
+```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install libmicrohttpd-dev libjansson-dev     libnice-dev libssl-dev libsrtp-dev libsrtp2-dev libsofia-sip-ua-dev     libglib2.0-dev libopus-dev libogg-dev libini-config-dev     libcollection-dev pkg-config gengetopt libtool automake dh-autoreconf
+```
