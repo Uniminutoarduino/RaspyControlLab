@@ -11,7 +11,7 @@ Main software repository for the Open-Hardware project (RaspyControl Lab). This 
 3. Take into account that in RaspyControl Lab, we used a Raspberry Pi 4 with RAM of 4GB. Also a model with 2GB is enough for the software requirements.
 
 # Instructions for software installation 
-1. Install Janus WebRTC server. This server allows the real-time video for the laboratory. Runs these commands from a terminal in the Raspberry Pi.
+1. **Install Janus WebRTC server.** This server allows the real-time video for the laboratory. Runs these commands from a terminal in the Raspberry Pi.
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -29,7 +29,7 @@ sudo make install
 sudo make configs
 ```
 
-2. Install an Apache2 server in your Raspberry Pi
+2. **Install an Apache2 server in your Raspberry Pi**
 ```
 sudo apt install apache2 -y
 sudo cp -r /home/pi/janus/janus-gateway/html /var/www/janus
