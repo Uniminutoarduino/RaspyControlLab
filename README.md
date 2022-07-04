@@ -117,7 +117,7 @@ sudo nano /etc/rc.local
 
 In this folder, you will find the bash scripts to start the video streaming, the Janus WebRTC server, and the node.js to the real-time plotter. 
 
-- For instance, if you want to change the video rate, go to the file "startbashffmpeg.sh". 
+- If you want to change the video rate, go to the file "startbashffmpeg.sh". 
 - If you want the start process of Janus go to the file startbashjanus.sh. 
 - Finally, if you want to change the access to the plotter employing node.js and redis, go to the files "startbashnode.sh" and "servidorwsHX.js".
 
