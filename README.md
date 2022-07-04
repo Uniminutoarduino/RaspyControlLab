@@ -11,7 +11,6 @@ Please, click on the following video to see a testing example of the Remote Labo
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=mceNmW32gA0
 " target="_blank"><img src="http://img.youtube.com/vi/mceNmW32gA0/0.jpg" 
 alt="PI controller example (RaspyControlLab)" width="400" height="300" border="2" /></a>
-
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=nNIj8CU-z-w
 " target="_blank"><img src="http://img.youtube.com/vi/nNIj8CU-z-w/0.jpg" 
 alt="Access to (RaspyControlLab)" width="400" height="300" border="2" /></a>
