@@ -7,7 +7,7 @@ Main software repository for the Open-Hardware project (RaspyControl Lab). Follo
 2. Use the software Raspberry Pi Imager to write this image in a micro sd card. 
 3. Take into accpunt that in RaspyControl Lab, we used a Raspberry Pi 4 with RAM of 4GB. Also a model with 2GB is enough for the software requirements.
 
-# Software Installation Instructions
+# Instructions for software installation 
 1. Install Janus WebRTC server. This server allows the real-time video for the laboratory. Runs these commands from a terminal in the Raspberry Pi.
 ```
 sudo apt-get update
