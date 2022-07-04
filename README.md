@@ -39,7 +39,7 @@ sudo cp -r /home/pi/janus/janus-gateway/html /var/www/janus
 ```
 sudo nano /etc/apache2/sites-available/000-default.conf
 ```
-  -Enable proxy mode in the Apache2 server
+  -Enable the proxy mode in the Apache2 server
 ```
 sudo a2enmod proxy
 sudo a2enmod proxy_http
