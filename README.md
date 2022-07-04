@@ -73,7 +73,7 @@ www-data ALL= NOPASSWD: ALL
 sudo cp FlaskApp.conf /etc/apache2/sites-available
 ```
 
-5. **Copy all contents of the folder FlaskApp available in the folder Apache 2 in this repository inside the location /var/wwww**. Because the file permissions are enabled to write files in the folder /var/www you can use a simple copy and paste, or use the following commands. 
+5. **Copy all contents of the folder FlaskApp available in the folder Apache 2 in this repository inside the location /var/wwww**. Because the file permissions are enabled to write files in the folder /var/www, you can use a simple copy and paste, or use the following commands. 
 ```
 sudo cp -R FlaskApp /var/www
 sudo service apache2 restart
