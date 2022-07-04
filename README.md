@@ -30,7 +30,7 @@ sudo make install
 sudo make configs
 ```
 
-  -edit the file janus.plugin.streaming.jcfg with the contents available in the folder Janus in this repository
+-Edit the file janus.plugin.streaming.jcfg with the contents available in the folder Janus in this repository. Use the following command for that:
   ```
   sudo nano opt/janus/etc/janus/janus.plugin.streaming.jcfg
   ```
