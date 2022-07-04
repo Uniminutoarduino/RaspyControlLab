@@ -4,6 +4,9 @@ Main software repository for the Open-Hardware project (RaspyControl Lab). This 
 ![IMG_20220610_205943304](https://user-images.githubusercontent.com/11606241/177064756-751f21b6-fdd3-4ecb-aab0-6fc227649cfa.jpg)
 ![IMG_20220610_205817676](https://user-images.githubusercontent.com/11606241/177064967-fb3548e2-48d3-4572-8fde-7342ec64ceed.jpg)
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=mceNmW32gA0
+" target="_blank"><img src="http://img.youtube.com/vi/mceNmW32gA0/0.jpg" 
+alt="PI controller example (RaspyControlLab)" width="400" height="300" border="2" /></a>
 
 # Prerequisites
 1. Download a 32-bit Raspberry Pi Os with recommended software from the webpage: https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2022-04-07/2022-04-04-raspios-bullseye-armhf-full.img.xz
