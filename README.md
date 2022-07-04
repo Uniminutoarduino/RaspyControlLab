@@ -34,7 +34,7 @@ sudo make configs
 sudo apt install apache2 -y
 sudo cp -r /home/pi/janus/janus-gateway/html /var/www/janus
 ```
-  -Edit the file 000-default.conf with the content of the file 000-default.conf in the folder (Apache2) of this respository
+  -Edit the file 000-default.conf of Apache2 in your Raspberry Pi with the content of the file 000-default.conf (https://github.com/Uniminutoarduino/RaspyControlLab/blob/main/Apache2/000-default.conf) in the folder (Apache2) of this respository
 
 ```
 sudo nano /etc/apache2/sites-available/000-default.conf
