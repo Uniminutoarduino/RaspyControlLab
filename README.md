@@ -47,12 +47,21 @@ sudo a2enmod proxy_http
 sudo service apache2 restart
 ```
 
-3. Change the permissions of the folder /var/www to write folders and files in it.
+3. **Change the permissions of the folder /var/www to write files in it.**
+
 ```
 sudo chown -R pi:www-data /var/www
 sudo chmod u+rxw,g+rx-w,o-rwx /var/www
 
 ```
-
+  -Edit the sudoers file
+  
+```
+sudo nano /etc/sudoers 
+(search for these lines)
+%sudo   ALL=(ALL:ALL) ALL
+www-data ALL= NOPASSWD: ALL
+sudo service apache2 restart
+```
 
 
