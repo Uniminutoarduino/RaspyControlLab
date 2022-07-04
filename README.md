@@ -13,4 +13,15 @@ Main software repository for the Open-Hardware project (RaspyControl Lab). Follo
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install libmicrohttpd-dev libjansson-dev     libnice-dev libssl-dev libsrtp-dev libsrtp2-dev libsofia-sip-ua-dev     libglib2.0-dev libopus-dev libogg-dev libini-config-dev     libcollection-dev pkg-config gengetopt libtool automake dh-autoreconf
+cd ~
+mkdir janus && cd janus
+git clone https://github.com/meetecho/janus-gateway.git
+cd janus-gateway
+sudo apt-get install libconfig-dev
+sh autogen.sh
+./configure --disable-websockets --disable-data-channels \
+--disable-rabbitmq --disable-docs --disable-mqtt --prefix=/opt/janus
+make
+sudo make install
+sudo make configs
 ```
