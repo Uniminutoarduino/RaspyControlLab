@@ -1,5 +1,5 @@
 # RaspyControlLab
-Main software repository for the Open-Hardware project (RaspyControl Lab). This laboratory is an initiative to build open-hardware experiments in automatic control available for all. Follow the instructions to build the software of RaspyControlLab.
+Main software repository for the Open-Hardware project (RaspyControl Lab). This laboratory is an initiative to build **open-hardware experiments** in automatic control available for everyone. Follow the instructions to build the software of RaspyControlLab.
 
 ![IMG_20220610_205943304](https://user-images.githubusercontent.com/11606241/177064756-751f21b6-fdd3-4ecb-aab0-6fc227649cfa.jpg)
 ![IMG_20220610_205817676](https://user-images.githubusercontent.com/11606241/177064967-fb3548e2-48d3-4572-8fde-7342ec64ceed.jpg)
