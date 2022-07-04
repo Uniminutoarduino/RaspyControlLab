@@ -92,7 +92,13 @@ sudo a2enmod rewrite
 sudo service apache2 restart
 ```
 
-7. **Start the Janus WebRTC server. Send a video stream using the tool ffmpeg**. Take in mind that the video port in this case is the 5004, and the rate is 200Kb/sec.
+7. Enable the site "FlaskApp" in Apache
+```
+sudo aen2site FlaskApp
+```
+
+
+8. **Start the Janus WebRTC server. Send a video stream using the tool ffmpeg**. Take in mind that the video port in this case is the 5004, and the rate is 200Kb/sec.
 
 ```
 /opt/janus/bin/janus -F /opt/janus/etc/janus/
@@ -100,5 +106,5 @@ sudo raspivid -t 0 -w 680 -h 480 -fps 20 -g 75 -b 200000 -n -rot 90 -o - | ffmpe
 
 ```
 
-8. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it.
+9. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it.
 
