@@ -76,6 +76,14 @@ sudo cp FlaskApp.conf /etc/apache2/sites-available
 5. **Copy all contents of the folder FlaskApp available in the folder Apache 2 in this repository inside the location /var/wwww**. Because the file permissions are enabled to write files in the folder /var/www, you can use a simple copy and paste, or use the following commands. 
 ```
 sudo cp -R FlaskApp /var/www
+```
+6. Install and enable the WSGI mode. RaspyControl Lab uses this mode to interact with Python language.
+
+```
+sudo apt-get install python3-pip apache2 libapache2-mod-wsgi-py3
+sudo a2enmod wsgi
+sudo a2enmod headers
+sudo a2enmod rewrite
 sudo service apache2 restart
 ```
 
