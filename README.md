@@ -58,10 +58,14 @@ sudo chmod u+rxw,g+rx-w,o-rwx /var/www
   
 ```
 sudo nano /etc/sudoers 
-(search for these lines)
+(search for these lines and modify them as follows:)
 %sudo   ALL=(ALL:ALL) ALL
 www-data ALL= NOPASSWD: ALL
-sudo service apache2 restart
+```
+
+  -Restart Apache2 service
+```
+  sudo service apache2 restart
 ```
 
 
