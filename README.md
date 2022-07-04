@@ -6,7 +6,7 @@ Main software repository for the Open-Hardware project (RaspyControl Lab). This 
 
 ## Video
 
-Please, click on the following video to see a testing example of the Remote Laboratory.
+Please, click on the following videos to see some testing examples of the Remote Laboratory **RaspyControlLab**.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=mceNmW32gA0
 " target="_blank"><img src="http://img.youtube.com/vi/mceNmW32gA0/0.jpg" 
