@@ -95,6 +95,7 @@ sudo service apache2 restart
 7. Enable the site "FlaskApp" in Apache
 ```
 sudo aen2site FlaskApp
+sudo service apache2 restart
 ```
 
 
