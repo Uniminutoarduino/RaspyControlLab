@@ -77,7 +77,7 @@ sudo cp FlaskApp.conf /etc/apache2/sites-available
 ```
 sudo cp -R FlaskApp /var/www
 ```
-6. Install and enable the WSGI mode. RaspyControl Lab uses this mode to interact with Python language.
+6. **Install and enable the WSGI mode. RaspyControl Lab uses this mode to interact with Python language.**
 
 ```
 sudo apt-get install python3-pip apache2 libapache2-mod-wsgi-py3
