@@ -25,3 +25,20 @@ make
 sudo make install
 sudo make configs
 ```
+
+2. Install an Apache2 server in your Raspberry Pi
+```
+sudo apt install apache2 -y
+sudo cp -r /home/pi/janus/janus-gateway/html /var/www/janus
+```
+-(Edit sites available) sudo nano /etc/apache2/sites-available/000-default.conf
+
+```
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo service apache2 restart
+```
+
+
+
+
