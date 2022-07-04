@@ -100,3 +100,5 @@ sudo raspivid -t 0 -w 680 -h 480 -fps 20 -g 75 -b 200000 -n -rot 90 -o - | ffmpe
 
 ```
 
+8. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it.
+
