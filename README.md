@@ -99,7 +99,7 @@ sudo service apache2 restart
 ```
 
 
-8. **Start the Janus WebRTC server. Send a video stream using the tool ffmpeg**. Take in mind that the video port in this case is the 5004, and the rate is 200Kb/sec.
+8. **Start the Janus WebRTC server. Send a video stream using the tool ffmpeg**. Take in mind that the video port in this case is the 5004, and the video rate is 200Kb/sec.
 
 ```
 /opt/janus/bin/janus -F /opt/janus/etc/janus/
