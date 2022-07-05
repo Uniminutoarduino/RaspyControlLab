@@ -191,7 +191,7 @@ Bind 0.0.0.0
 ```
 sudo pip3 install redis
 ```
-14. **To plot data, we ceated a small library with redis support.**
+14. **To plot data, we created a small library with redis support known as plotter.** This library is inside the folder /var/www/FlaskApp
 - Import the library
 ```
 import plotter as plot #Library to plot data
