@@ -209,4 +209,5 @@ plot.3m(str(sensor),str(sensor2),str(sensor3))
 15. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it. Test the experiment and the plotter. See the following videos if you have any doubt.
 
 - PI Controller: https://youtu.be/mceNmW32gA0
-- Pi Controller with plotter: https://youtu.be/ifcukqjerqE
+- PI Controller with plotter: https://youtu.be/ifcukqjerqE
+- Full test (Record of laboratory functioning): https://youtu.be/Vvyo_BSJTMU
