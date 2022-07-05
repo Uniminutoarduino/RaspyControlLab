@@ -191,6 +191,20 @@ Bind 0.0.0.0
 ```
 sudo pip3 install redis
 ```
+14. **To plot data, we ceated a small library with redis support.**
+- Import the library
+```
+import plotter as plot #Library to plot data
+```
+- You can use any of the following functions as you desire. Take into account that data must be in form of string. Therefore, we employed the method str to transform numeric data in string.
+```
+plot.1m(str(sensor)) #Plot a sample of one sensor, controller, etc.
+plot.2m(str(sensor),str(sensor2)) #Plot two samples of sensors, controller, etc.
+#Plot three samples of sensors, controller, etc.
+plot.3m(str(sensor),str(sensor2),str(sensor3)) 
+```
 
+15. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it. Test the experiment and the plotter. See the following videos if you have any doubt.
 
-14. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it.
+- PI Controller: https://youtu.be/mceNmW32gA0
+- Pi Controller with plotter: https://youtu.be/ifcukqjerqE
