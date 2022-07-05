@@ -164,7 +164,13 @@ sudo cp -R * /usr/local
 node -v
 npm -v
 ```
+- Install de node.js packages needed to plot data
+```
+sudo npm install ws
+sudo npm install redis  
+sudo npm install fs
 
+```
 
 - Install the redis database server
 ```
@@ -180,6 +186,10 @@ sudo nano /etc/redis/redis.conf
 ```
 #bind 127.0.0.1::1
 Bind 0.0.0.0
+```
+-- Install the Python redis client
+```
+sudo pip3 install redis
 ```
 
 
