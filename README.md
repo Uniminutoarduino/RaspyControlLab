@@ -160,5 +160,9 @@ cd /home/pi/node-v16.15.1-linux-armv7l
 sudo cp -R * /usr/local 
 ```
 - If the installation is ready, check the versions of node and npm
+```
+node -v
+npm -v
+```
 
 14. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it.
