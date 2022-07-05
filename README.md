@@ -177,6 +177,7 @@ redis-cli
 sudo nano /etc/redis/redis.conf
 ```
 -- Search and put these lines in the redis.conf file
+```
 #bind 127.0.0.1::1
 Bind 0.0.0.0
 ```
