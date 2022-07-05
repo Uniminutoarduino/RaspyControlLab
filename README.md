@@ -136,14 +136,14 @@ In this folder, you will find the bash scripts to start the video streaming, the
 ```
 reboot
 ```
-12. Install the Python library to manage the 16-bit ADC (ADS1115). This ADC will read the values of the level from the ultrasonic sensor (US-016).
+12. **Install the Python library to manage the 16-bit ADC (ADS1115).** This ADC will read the values of the level from the ultrasonic sensor (US-016).
 ```
 sudo apt-get install build-essential python-dev python-smbus
 sudo pip3 install adafruit-circuitpython-ads1x15
 sudo pip install adafruit-circuitpython-ads1x15
 ```
 
-13. To plot data in real-time from the experiment, we need to install node.js and a redis database. For that, the steps are:
+13. **To plot data in real-time from the experiment, we need to install node.js and a redis database.** For that, the steps are:
 
 - Check the system architecture version of your Raspberry Pi
 ```
@@ -152,7 +152,6 @@ uname -m
 - Get the node.js version for your system architecture. 
 ```
 wget https://nodejs.org/dist/v16.15.1/node-v16.15.1-linux-armv7l.tar.xz
-```
 ```
 - Install node.js
 ```
