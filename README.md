@@ -165,4 +165,21 @@ node -v
 npm -v
 ```
 
+
+- Install the redis database server
+```
+sudo apt install redis-server
+redis-server –version
+redis-cli
+```
+--  Edit the redis server configuration
+```
+sudo nano /etc/redis/redis.conf
+```
+-- Search and put these lines in the redis.conf file
+#bind 127.0.0.1::1
+Bind 0.0.0.0
+```
+
+
 14. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it.
