@@ -191,7 +191,7 @@ Bind 0.0.0.0
 ```
 sudo pip3 install redis
 ```
-The files to start the node.js server and for the plotter are available at the HardwareX folder and in the location /var/www/FlaskApp/templates/plot.html. Please, see these files.
+The files to start the node.js server and the webpage for the plotter are available at the HardwareX folder and in the location /var/www/FlaskApp/templates/plot.html. Please, see these files.
 
 14. **To plot data, we created a small library with redis support known as plotter.** This library is inside the folder /var/www/FlaskApp
 - Import the library
