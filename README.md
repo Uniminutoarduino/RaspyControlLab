@@ -164,6 +164,7 @@ wget https://nodejs.org/dist/v16.15.1/node-v16.15.1-linux-armv7l.tar.xz
 tar -xzf node-v16.15.1-linux-armv7l.tar.xz
 cd /home/pi/node-v16.15.1-linux-armv7l
 sudo cp -R * /usr/local 
+reboot
 ```
 - If the installation is ready, check the versions of node and npm
 ```
