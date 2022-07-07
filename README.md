@@ -156,6 +156,7 @@ uname -m
 ```
 - Get the node.js version for your system architecture. 
 ```
+cd 
 wget https://nodejs.org/dist/v16.15.1/node-v16.15.1-linux-armv7l.tar.xz
 ```
 - Install node.js
