@@ -67,6 +67,11 @@ sudo service apache2 restart
 ```
 sudo chown -R pi:www-data /var/www
 sudo chmod u+rxw,g+rx-w,o-rwx /var/www
+sudo chmod 777 /var/www/FlaskApp -R
+sudo chmod -R g+w /var/www/FlaskApp
+sudo chown -R www-data:www-data /var/www/FlaskApp
+sudo service apache2 restart
+
 
 ```
   -Edit the sudoers file
