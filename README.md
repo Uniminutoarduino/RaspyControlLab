@@ -154,7 +154,7 @@ sudo pip install adafruit-circuitpython-ads1x15
 ```
 uname -m
 ```
-- Get the node.js version for your system architecture. 
+- Get the node.js version for your system architecture. The version must be above 12.0.
 ```
 cd 
 wget https://nodejs.org/dist/v16.15.1/node-v16.15.1-linux-armv7l.tar.xz
