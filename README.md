@@ -219,4 +219,4 @@ plot.3m(str(sensor),str(sensor2),str(sensor3))
 - PI Controller with plotter: https://youtu.be/ifcukqjerqE
 - Full test (Record of laboratory functioning): https://youtu.be/Vvyo_BSJTMU
 
-16. To redirect the Pyhon console to the web interface, we created a bash script "EjemploBash.sh" which can be located at the folder /var/www/FlaskApp. Besides, each time of a Python script arrives to the Raspberry Pi, this restart the current script that is being executed. The bash script ("EjemploBashRestart.sh") allows this funtion is located at the folder /var/www/FlaskApp.
+16. To redirect the Python console to the web interface, we created a bash script "EjemploBash.sh" which can be located at the folder /var/www/FlaskApp. Besides, each time of a Python script arrives to the Raspberry Pi, this restart the current script that is being executed. The bash script ("EjemploBashRestart.sh") allows this funtion is located at the folder /var/www/FlaskApp.
