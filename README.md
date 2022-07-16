@@ -114,7 +114,7 @@ sudo service apache2 restart
 ```
 
 
-8. **Start the Janus WebRTC server. Send a video stream using the tool ffmpeg**. Take in mind that the video port in this case is the 5004, and the video rate is 200Kb/sec.
+8. **Start the Janus WebRTC server. Send a video stream using the tool ffmpeg**. Take in mind that the video port in this case is the 5004, and the video rate is 200Kb/sec. By default *ffmpeg* comes in the distribution software of your Raspberry Pi.
 
 ```
 /opt/janus/bin/janus -F /opt/janus/etc/janus/
