@@ -124,7 +124,7 @@ sudo raspivid -t 0 -w 680 -h 480 -fps 20 -g 75 -b 200000 -n -rot 90 -o - | ffmpe
 
 9. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it.
 
-10. **Copy the folder HardwareX and paste it in your Desktop folder.** Go to the file rc.local and edit it with the contents of the file ("rc.local") provided in this repository.
+10. **Copy the folder HardwareX and paste it in your Desktop folder in the Raspberry Pi.** Go to the file rc.local and edit it with the contents of the file ("rc.local") provided in this repository.
 
 ```
 sudo nano /etc/rc.local
