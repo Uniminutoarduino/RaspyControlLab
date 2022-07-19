@@ -19,7 +19,7 @@ alt="Access to (RaspyControlLab)" width="400" height="300" border="2" /></a>
 1. Download a 32-bit Raspberry Pi Os with recommended software from the webpage: https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2022-04-07/2022-04-04-raspios-bullseye-armhf-full.img.xz
 2. Use the software Raspberry Pi Imager to write this image in a micro sd card. 
 3. Take into account that in RaspyControl Lab, we used a Raspberry Pi 4 with RAM of 4GB. Also a model with 2GB is enough for the software requirements.
-4. Enable the following interfaces: Camera, VNC, SSH, I2C,SPI of your Raspberry Pi. Use the command sudo raspi-config from a terminal or enter to the Raspberry Pi configuration in your Raspberry Pi OS.
+4. Enable the following interfaces: Camera, VNC, SSH, I2C,SPI of your Raspberry Pi. Use the command sudo raspi-config from a terminal or enter to the Raspberry Pi configuration in your Raspberry Pi OS. Please, check the camera using the command Raspistill or Raspivid. 
 5. A web browser (Chrome, Firefox, etc.)  with WebRTC standard support. Please check this page to identify the minimum version: https://caniuse.com/?search=webrtc
 
 # Instructions for software installation 
