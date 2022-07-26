@@ -206,7 +206,7 @@ The files to start the node.js server and the webpage for the plotter are availa
 ```
 import plotter as plot #Library to plot data
 ```
-- You can use any of the following functions as you desire. Take into account that data must be in form of string. Therefore, we employed the method str to transform numeric data in string.
+- You can use any of the following functions as you desire. Take into account that data must be in form of string. Therefore, we employed the method **str** to transform numeric data in string.
 ```
 plot.1m(str(sensor)) #Plot a sample of one sensor, controller, etc.
 plot.2m(str(sensor),str(sensor2)) #Plot two samples of sensors, controller, etc.
