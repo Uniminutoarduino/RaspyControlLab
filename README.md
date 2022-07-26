@@ -16,14 +16,14 @@ alt="PI controller example (RaspyControlLab)" width="400" height="300" border="2
 alt="Access to (RaspyControlLab)" width="400" height="300" border="2" /></a>
 
 # Prerequisites
-1. Download a 32-bit Raspberry Pi Os with recommended software from the webpage: https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2022-04-07/2022-04-04-raspios-bullseye-armhf-full.img.xz
-2. Use the software Raspberry Pi Imager to write this image in a micro sd card. 
-3. Take into account that in RaspyControl Lab, we used a Raspberry Pi 4 with RAM of 4GB. Also a model with 2GB is enough for the software requirements.
-4. Enable the following interfaces: Camera, VNC, SSH, I2C,SPI of your Raspberry Pi. Use the command sudo raspi-config from a terminal or enter to the Raspberry Pi configuration in your Raspberry Pi OS. Please, check the camera using the commands Raspistill or Raspivid from a terminal in the Raspberry Pi OS. 
+1. Download 32-bit Raspberry Pi OS with the recommended software from the webpage: https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2022-04-07/2022-04-04-raspios-bullseye-armhf-full.img.xz
+2. Use the software Raspberry Pi Imager to write this image on a micro sd card.  
+3. Take into account that in RaspyControl Lab, we used a Raspberry Pi 4 with RAM of 4GB. Also, a model with 2GB is enough for the software requirements.
+4. Enable the following interfaces: Camera, VNC, SSH, I2C,SPI of your Raspberry Pi. Use the command sudo raspi-config from a terminal or enter the Raspberry Pi configuration in your Raspberry Pi OS. Please, check the camera using the commands Raspistill or Raspivid from a terminal in the Raspberry Pi OS. 
 5. A web browser (Chrome, Firefox, etc.)  with WebRTC standard support. Please check this page to identify the minimum version: https://caniuse.com/?search=webrtc
 
 # Instructions for software installation 
-1. **Install Janus WebRTC server.** This server allows the real-time video for the laboratory. Runs these commands from a terminal in the Raspberry Pi.
+1. **Install Janus WebRTC server.** This server allows real-time video for the laboratory. Run these commands from a terminal in the Raspberry Pi.
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -51,7 +51,7 @@ sudo make configs
 sudo apt install apache2 -y
 sudo cp -r /home/pi/janus/janus-gateway/html /var/www/janus
 ```
-  -Edit the file 000-default.conf of Apache2 in your Raspberry Pi with the content of the file 000-default.conf (https://github.com/Uniminutoarduino/RaspyControlLab/blob/main/Apache2/000-default.conf) in the folder (Apache2) of this respository
+  -Edit the file 000-default.conf of Apache2 in your Raspberry Pi with the content of the file 000-default.conf (https://github.com/Uniminutoarduino/RaspyControlLab/blob/main/Apache2/000-default.conf) in the folder (Apache2) of this repository
 
 ```
 sudo nano /etc/apache2/sites-available/000-default.conf
@@ -115,7 +115,7 @@ sudo service apache2 restart
 ```
 
 
-8. **Start the Janus WebRTC server. Send a video stream using the tool ffmpeg**. Take in mind that the video port in this case is the 5004, and the video rate is 200Kb/sec. By default *ffmpeg* comes in the distribution software of your Raspberry Pi OS.
+8. **Start the Janus WebRTC server. Send a video stream using the tool ffmpeg**. Take in mind that the video port, in this case, is the 5004, and the video rate is 200Kb/sec. By default *ffmpeg* comes in the distribution software of your Raspberry Pi OS.
 
 ```
 /opt/janus/bin/janus -F /opt/janus/etc/janus/
@@ -125,7 +125,7 @@ sudo raspivid -t 0 -w 680 -h 480 -fps 20 -g 75 -b 200000 -n -rot 90 -o - | ffmpe
 
 9. **Open a browser (Google Chrome or Mozilla Firefox) and type the IP of the Raspberry Pi.** You should see the real-time video of the experiment and the web interface for it.
 
-10. **Copy the folder HardwareX and paste it in your Desktop folder in the Raspberry Pi.** Go to the file rc.local and edit it with the contents of the file ("rc.local") provided in this repository.
+10. **Copy the folder HardwareX and paste it into your Desktop folder in the Raspberry Pi.** Go to the file rc.local and edit it with the contents of the file ("rc.local") provided in this repository.
 
 ```
 sudo nano /etc/rc.local
@@ -134,8 +134,8 @@ sudo nano /etc/rc.local
 In this folder, you will find the bash scripts to start the video streaming, the Janus WebRTC server, and the node.js to the real-time plotter. 
 
 - If you want to change the video rate, go to the file "startbashffmpeg.sh". 
-- If you want the start process of Janus go to the file startbashjanus.sh. 
-- Finally, if you want to change the access to the plotter employing node.js and redis, go to the files "startbashnode.sh" and "servidorwsHX.js".
+- If you want the start process of Janus, go to the file startbashjanus.sh. 
+- Finally, if you want to change the access to the plotter employing node.js and Redis, go to the files "startbashnode.sh" and "servidorwsHX.js".
 
 11. **Reboot your Raspberry Pi.**
 
@@ -149,7 +149,7 @@ sudo pip3 install adafruit-circuitpython-ads1x15
 sudo pip install adafruit-circuitpython-ads1x15
 ```
 
-13. **To plot data in real-time from the experiment, we need to install node.js and a redis database.** For that, the steps are:
+13. **To plot data in real-time from the experiment, we need to install node.js and a Redis database.** For that, the steps are:
 
 - Check the system architecture version of your Raspberry Pi
 ```
@@ -172,7 +172,7 @@ reboot
 node -v
 npm -v
 ```
-- Install de node.js packages needed to plot data
+- Install the node.js packages needed to plot data
 ```
 sudo npm install ws
 sudo npm install redis  
@@ -180,13 +180,13 @@ sudo npm install fs
 
 ```
 
-- Install the redis database server
+- Install the Redis database server
 ```
 sudo apt install redis-server
 redis-server –version
 redis-cli
 ```
---  Edit the redis server configuration
+--  Edit the Redis server configuration
 ```
 sudo nano /etc/redis/redis.conf
 ```
@@ -195,13 +195,13 @@ sudo nano /etc/redis/redis.conf
 #bind 127.0.0.1::1
 Bind 0.0.0.0
 ```
--- Install the Python redis client
+-- Install the Python Redis client
 ```
 sudo pip3 install redis
 ```
-The files to start the node.js server and the webpage for the plotter are available at the HardwareX folder and in the location /var/www/FlaskApp/templates/plot.html. Please, see these files.
+The files to start the node.js server and the webpage for the plotter are available in the HardwareX folder and in the location /var/www/FlaskApp/templates/plot.html. Please, see these files.
 
-14. **To plot data, we created a small library with redis support known as plotter.** This library is inside the folder /var/www/FlaskApp
+14. **To plot data, we created a small library with Redis support known as plotter.** This library is inside the folder /var/www/FlaskApp
 - Import the library
 ```
 import plotter as plot #Library to plot data
@@ -220,4 +220,4 @@ plot.3m(str(sensor),str(sensor2),str(sensor3))
 - PI Controller with plotter: https://youtu.be/ifcukqjerqE
 - Full test (Record of laboratory functioning): https://youtu.be/Vvyo_BSJTMU
 
-16. To redirect the Python console to the web interface, we created a bash script "EjemploBash.sh" which can be located at the folder /var/www/FlaskApp. Besides, each time of a Python script arrives to the Raspberry Pi, a bash script ("EjemploBashRestart.sh") restarts the current script that is being executed. This bash script is located at the folder /var/www/FlaskApp.
+16. To redirect the Python console to the web interface, we created a bash script "EjemploBash.sh" which can be located in the folder /var/www/FlaskApp. Besides, each time that a Python script arrives on the Raspberry Pi, a bash script ("EjemploBashRestart.sh") restarts the current script that is being executed. This bash script is located in the folder /var/www/FlaskApp.
