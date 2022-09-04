@@ -222,7 +222,7 @@ plot.3m(str(sensor),str(sensor2),str(sensor3))
 
 16. To redirect the Python console to the web interface, we created a bash script "EjemploBash.sh" which can be located in the folder /var/www/FlaskApp. Besides, each time that a Python script arrives on the Raspberry Pi, a bash script ("EjemploBashRestart.sh") restarts the current script that is being executed. This bash script is located in the folder /var/www/FlaskApp.
 
-17. Be aware about the configuration settings of VNCViewer. For instance, when you use an external monitor or Raspberry Pi touchscreen in the MIPI DSI display port, VNCViewer will show a black screen. In this case, install Putty and enter to the Raspberry Pi with the IP assigned to it in your network (user:pi, pass:remotelab, port: 22). In the Raspberry Pi console, put the following commands:
+17. Be aware of the configuration settings of VNCViewer. For instance, when you use an external monitor or Raspberry Pi touchscreen in the MIPI DSI display port, VNCViewer will show a black screen. In this case, install Putty and enter to the Raspberry Pi with the IP assigned to it in your network (user:pi, pass:remotelab, port: 22). In the Raspberry Pi console, put the following commands:
 
 ```
 sudo nano /boot/config.txt
@@ -241,4 +241,4 @@ Just press ctrl+o to save the file. Next, press ctrl+x to get out of this file. 
 sudo reboot
 ```
 
-This will reboot your Raspberry Pi. This changes should resolve the problem.
+This will reboot your Raspberry Pi. These changes should resolve the problem.
