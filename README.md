@@ -235,7 +235,7 @@ framebuffer_width=1280
 framebuffer_height=720
 ```
 
-Just press ctrl+o to save the file. Next, prss ctrl+x to get out of this file. Next type in the console:
+Just press ctrl+o to save the file. Next, press ctrl+x to get out of this file. Next, type in the console:
 
 ```
 sudo reboot
