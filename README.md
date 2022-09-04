@@ -245,7 +245,7 @@ This will reboot your Raspberry Pi. These changes should resolve the problem.
 
 18. Use the Python scripts available in the folder --Scripts-- to interact with the experiment. The scripts are the following:
 
-- fill_tank.py: script to fill the main tank (T1) of the experiment.
+- fill_tank.py: script to fill the main tank (T1) of the experiment and interact with the motor pumps in each tank (T1-T2).
 - PController.py: script for Proportional (P) controller.
 - PIController.py: script for Proportional-Integral (PI) controller.
 - PIControllerwPlot.py: script for Proportional-Integral (PI) controller with plot option in the remote laboratory.
